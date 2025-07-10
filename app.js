@@ -261,9 +261,9 @@ function findMinePosition(jsonObject, playerName){
     }
     return null;
 }
-function startAgain()
-{
-    location.replace("https://sreynders.github.io/final_computing_redo/");
+function startAgain() {
+    window.location.href = "app.html"; // Same directory
+    // or "../index.html" if in subfolder
 }
 //Code from w3shools url="https://www.w3schools.com/js/js_cookies.asp"
 function getCookie(cname) {
