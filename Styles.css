@@ -1,0 +1,243 @@
+body {
+    background-image: url('old_map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    background-color: goldenrod;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    color: #333;
+}
+
+
+body
+{
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+#myWraper
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px darkslategrey;
+}
+
+#form
+{
+    margin-top: 20px;
+}
+
+#fname, #ans
+{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0 20px;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    font-size: 20px;
+}
+
+#true, #false,
+#A, #B, #C, #D
+{
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+label
+{
+    font-size: 16px;
+}
+.buttons
+{
+    background-color: purple;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px 10px 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buttons:hover
+{
+    background-color: grey;
+}
+
+.textQ, .numericQ, .booleanQ, .MCQ
+{
+    margin-bottom: 20px;
+}
+
+.textQ label,
+.numericQ label,
+.booleanQ p,
+.MCQ p
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#QRContainer
+{
+    background-color: #eef6ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+#preview
+{
+    width: 100%;
+    max-width: 400px;
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+#QRContainer .buttons
+{
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+#end
+{
+    text-align: center;
+    padding: 30px;
+}
+#gameEnd
+{
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#secondWrap
+{
+    margin-top: 20px;
+    background-color: #e9fbe5;
+    border-left: 6px solid cornflowerblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#congratulation
+{
+    font-size: 1.4em;
+    color: dodgerblue;
+}
+
+#scoreAdjustment
+{
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+    color: royalblue;
+}
+
+.Hunts
+{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid lightskyblue;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Hunts:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Hunts h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.Hunts p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.Hunts a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.Hunts a:hover {
+    background-color: slateblue;
+}
+
+@media (max-width: 768px)
+{
+    #myWraper
+    {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .buttons
+    {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    #QRContainer
+    {
+        padding: 15px;
+    }
+
+    #gameEnd,
+    #congratulation
+    {
+        font-size: 1.3em;
+    }
+
+    #scoreAdjustment
+    {
+        font-size: 1em;
+    }
+
+    label, p
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    #fname, #ans
+    {
+        font-size: 14px;
+    }
+
+    .buttons
+    {
+        font-size: 14px;
+    }
+
+    #gameEnd,
+    #congratulation
+    {
+        font-size: 1.2em;
+    }
+}
